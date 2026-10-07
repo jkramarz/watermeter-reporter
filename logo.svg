@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 0 720 220" role="img" aria-labelledby="title description">
+  <title id="title">Watermeter Reporter</title>
+  <desc id="description">A blue water meter with a droplet and the words Watermeter Reporter.</desc>
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c9bd5"/>
+      <stop offset="1" stop-color="#075b91"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#063b5d" flood-opacity=".24"/>
+    </filter>
+  </defs>
+  <rect width="720" height="220" rx="28" fill="#f5fbff"/>
+  <g transform="translate(32 22)" filter="url(#shadow)">
+    <rect x="18" y="18" width="142" height="146" rx="24" fill="url(#water)"/>
+    <path d="M89 38c-21 31-44 54-44 86 0 24 20 44 44 44s44-20 44-44c0-32-23-55-44-86Z" fill="#fff" opacity=".95"/>
+    <path d="M89 58c-14 21-31 40-31 65 0 17 14 31 31 31s31-14 31-31c0-25-17-44-31-65Z" fill="#1c9bd5"/>
+    <path d="M89 77v64" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="89" cy="109" r="14" fill="#fff"/>
+    <path d="M48 53h75" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".5"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#073b5d">
+    <text x="225" y="106" font-size="56" font-weight="700">Watermeter</text>
+    <text x="225" y="169" font-size="52" font-weight="700" fill="#147eb6">Reporter</text>
+  </g>
+</svg>
