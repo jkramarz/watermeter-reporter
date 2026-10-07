@@ -4,19 +4,19 @@ submit_reading:
   fields:
     owner_name:
       name: Owner name
-      description: Name of the meter owner or facility.
-      required: true
+      description: Name of the meter owner or facility. Uses the configured value when omitted.
+      required: false
       selector:
         text:
     address:
       name: Address
-      description: Address of the water meter.
-      required: true
+      description: Address of the water meter. Uses the configured value when omitted.
+      required: false
       selector:
         text:
     meter_number:
       name: Meter number
-      description: Number of the main meter.
+      description: Number of the main meter. Uses the configured value when omitted.
       required: false
       selector:
         text:
