@@ -1,8 +1,23 @@
 {
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "owner_name": "Owner name",
+          "address": "Address",
+          "meter_number": "Meter number"
+        },
+        "description": "Enter the water meter details used for submissions."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Only one Watermeter Reporter configuration is allowed."
+    }
+  },
   "services": {
     "submit_reading": {
       "name": "Submit reading",
-      "description": "Submits a water meter reading to Urząd Gminy Dobczyce."
+      "description": "Submits a water meter reading to Dobczyce."
     }
   }
 }

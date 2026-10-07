@@ -14,8 +14,6 @@ Watermeter Reporter is a Home Assistant custom integration for submitting water 
 
 ## Installation
 
-This integration is **service-only** and does not provide a configuration flow. It must be installed through HACS instead of adding it from the **Add Integration** page.
-
 1. Open HACS in Home Assistant.
 2. Select **Integrations** and choose **Add Repository**.
 3. Enter the repository URL:
@@ -26,7 +24,8 @@ This integration is **service-only** and does not provide a configuration flow. 
 
 4. Install **Watermeter Reporter** from HACS.
 5. Restart Home Assistant.
-6. Open **Developer Tools → Services** and call `watermeter_reporter.submit_reading`.
+6. Open **Settings → Devices & Services → Add Integration**, search for **Watermeter Reporter**, and select **Add**.
+7. Open **Developer Tools → Services** and call `watermeter_reporter.submit_reading`.
 
 ## Service
 

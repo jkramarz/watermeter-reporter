@@ -2,6 +2,7 @@
   "domain": "watermeter_reporter",
   "name": "Watermeter Reporter",
   "codeowners": ["@jkramarz"],
+  "config_flow": true,
   "documentation": "https://github.com/jkramarz/watermeter-reporter",
   "integration_type": "service",
   "requirements": [
