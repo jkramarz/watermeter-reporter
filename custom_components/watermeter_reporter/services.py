@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import datetime
+from functools import partial
 from typing import Any
 
 import requests
@@ -70,6 +71,6 @@ async def async_setup_services(hass: HomeAssistant) -> None:
     hass.services.async_register(
         DOMAIN,
         SERVICE_SUBMIT_READING,
-        async_submit_reading,
+        partial(async_submit_reading, hass),
         schema=SERVICE_SCHEMA,
     )

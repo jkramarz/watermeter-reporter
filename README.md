@@ -25,11 +25,12 @@ Watermeter Reporter is a Home Assistant custom integration for submitting water 
 4. Install **Watermeter Reporter** from HACS.
 5. Restart Home Assistant.
 6. Open **Settings → Devices & Services → Add Integration**, search for **Watermeter Reporter**, and select **Add**.
-7. Open **Developer Tools → Services** and call `watermeter_reporter.submit_reading`.
+7. Enter the owner name, address, and meter number when prompted.
+8. Open **Developer Tools → Services** and call `watermeter_reporter.submit_reading`.
 
 ## Service
 
-Call `watermeter_reporter.submit_reading` from a script, automation, or action.
+Call `watermeter_reporter.submit_reading` from a script, automation, or action. The configured owner name, address, and meter number are used automatically when the corresponding service fields are omitted. They can be overridden in the Action when needed.
 
 ```yaml
 service: watermeter_reporter.submit_reading
