@@ -1,0 +1,8 @@
+{
+  "services": {
+    "submit_reading": {
+      "name": "Submit reading",
+      "description": "Submits a water meter reading to Urząd Gminy Dobczyce."
+    }
+  }
+}

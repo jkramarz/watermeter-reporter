@@ -1,0 +1,64 @@
+submit_reading:
+  name: Submit reading
+  description: Submits a water meter reading to Dobczyce.
+  fields:
+    owner_name:
+      name: Owner name
+      description: Name of the meter owner or facility.
+      required: true
+      selector:
+        text:
+    address:
+      name: Address
+      description: Address of the water meter.
+      required: true
+      selector:
+        text:
+    meter_number:
+      name: Meter number
+      description: Number of the main meter.
+      required: false
+      selector:
+        text:
+    primary_reading:
+      name: Primary reading
+      description: Reading of the main meter.
+      required: true
+      selector:
+        number:
+          min: 0
+          mode: box
+    secondary_reading:
+      name: Secondary reading
+      description: Reading of the secondary meter, if present.
+      required: false
+      selector:
+        number:
+          min: 0
+          mode: box
+    tertiary_reading:
+      name: Tertiary reading
+      description: Reading of the tertiary meter, if present.
+      required: false
+      selector:
+        number:
+          min: 0
+          mode: box
+    reading_date:
+      name: Reading date
+      description: Date of the reading in YYYY-MM-DD format.
+      required: false
+      selector:
+        date:
+    notes:
+      name: Notes
+      description: Additional notes for the submission.
+      required: false
+      selector:
+        text:
+    dry_run:
+      name: Dry run
+      description: Print the payload without submitting it.
+      required: false
+      selector:
+        boolean:

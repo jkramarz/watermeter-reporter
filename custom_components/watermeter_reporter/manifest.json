@@ -1,0 +1,12 @@
+{
+  "domain": "watermeter_reporter",
+  "name": "Watermeter Reporter",
+  "codeowners": ["@jkramarz"],
+  "documentation": "https://github.com/jkramarz/watermeter-reporter",
+  "integration_type": "service",
+  "requirements": [
+    "beautifulsoup4>=4.12,<5",
+    "requests>=2.31,<3"
+  ],
+  "version": "1.0.0"
+}
