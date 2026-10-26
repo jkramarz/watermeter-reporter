@@ -41,3 +41,26 @@ class WatermeterReporterConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 }
             ),
         )
+
+    async def async_step_reconfigure(self, user_input=None, entry=None) -> FlowResult:
+        """Handle a reconfiguration flow."""
+        if user_input is not None:
+            self.hass.config_entries.async_update_entry(
+                entry,
+                data={
+                    **entry.data,
+                    **user_input,
+                },
+            )
+            return self.async_abort(reason="reconfiguration_complete")
+
+        return self.async_show_form(
+            step_id="reconfigure",
+            data_schema=vol.Schema(
+                {
+                    vol.Required(key, default=entry.data.get(key, "")): cv.string
+                    for key in ["owner_name", "address", "meter_number"]
+                }
+            ),
+            description_placeholders={"entry_title": entry.title},
+        )

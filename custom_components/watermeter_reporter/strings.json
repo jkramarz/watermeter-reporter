@@ -8,10 +8,19 @@
           "meter_number": "Meter number"
         },
         "description": "Enter the water meter details used for submissions."
+      },
+      "reconfigure": {
+        "data": {
+          "owner_name": "Owner name",
+          "address": "Address",
+          "meter_number": "Meter number"
+        },
+        "description": "Update the water meter details used for submissions. The new values will be used for all submissions."
       }
     },
     "abort": {
-      "single_instance_allowed": "Only one Watermeter Reporter configuration is allowed."
+      "single_instance_allowed": "Only one Watermeter Reporter configuration is allowed.",
+      "reconfiguration_complete": "Configuration has been updated."
     }
   },
   "services": {
